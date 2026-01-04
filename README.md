@@ -42,4 +42,46 @@ La comunicación entre la Raspberry Pi y la interfaz web se realiza mediante el 
 ```bash
 git clone https://github.com/NachoFaccipieri/TP2
 cd TP2/EntregaFinal
+```
+2. Crear y activar un entorno virtual::
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+3. Instalar dependencias:
+```bash
+pip install -r requirements.txt
+```
+4. Instalar y habilitar Mosquitto:
+```bash
+sudo apt install mosquitto mosquitto-clients
+sudo systemctl enable mosquitto
+sudo systemctl start mosquitto
+```
+5. Ejecutar el sistema:
+```bash
+sudo python3 FaceID.py
+```
+
+## 🎮 Uso del sistema
+
+### 🔔 Reconocimiento facial
+1. Presionar el botón físico.
+2. El sistema captura la imagen y realiza el reconocimiento.
+3. En la web se muestra:
+    -Imagen capturada
+    -Nombre reconocido (si existe coincidencia)
+    -Porcentaje de similitud
+4. Desde la web se puede:
+    -Permitir acceso → el servo abre la cerradura
+    -Denegar acceso → no se acciona el servo
+
+### 👤 Registro de nuevos usuarios
+   
+1. Presionar Registrar nuevo rostro en la web.
+2. Ingresar el nombre del usuario.
+3. Presionar el botón físico.
+4. El rostro queda almacenado para futuros reconocimientos.
+
+
 
