@@ -83,5 +83,39 @@ sudo python3 FaceID.py
 3. Presionar el botón físico.
 4. El rostro queda almacenado para futuros reconocimientos.
 
+## 🧩 Componentes utilizados
+### Hardware
+* Raspberry Pi 3 Model B
+* Cámara USB
+* Servomotor SG90
+* LED RGB
+* Botón físico
+* Fuente de alimentación 5V
+
+###Software
+* Python 3
+* OpenCV
+* MTCNN
+* FaceNet (Keras / TensorFlow)
+* NumPy
+* Flask
+* MQTT (Mosquitto)
+* HTML, CSS y JavaScript
+
+## 📂 Estructura del proyecto
+* FaceID.py – Lógica principal del sistema
+* embeddings.txt – Base de datos de embeddings faciales
+* names.txt – Nombres asociados a cada embedding
+* index.html – Interfaz web
+* script.js – Lógica del cliente web y MQTT
+* requirements.txt – Dependencias del proyecto
+
+## 🎯 Objetivo del proyecto
+Desarrollar un sistema de autenticación biométrica funcional y educativo, que permita comprender el funcionamiento del reconocimiento facial y su integración con hardware e interfaces web.
+
+## 👨‍💻 Autores
+* Ignacio Faccipieri
+* Matías Rodriguez Aguiar
+* Fausto Graciano Gonzalez
 
 
