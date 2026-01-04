@@ -92,7 +92,7 @@ sudo python3 FaceID.py
 * Botón físico
 * Fuente de alimentación 5V
 
-###Software
+### Software
 * Python 3
 * OpenCV
 * MTCNN
